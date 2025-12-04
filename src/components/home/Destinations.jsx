@@ -46,9 +46,38 @@ const Destinations = () => {
                 </div>
 
                 {/* Interactive Map */}
-                <div className="w-full md:w-2/3 h-[500px] bg-gradient-to-br from-blue-900/20 to-blue-950/40 rounded-2xl relative overflow-hidden border border-brand-orange/20 shadow-2xl">
-                    {/* Background map image */}
-                    <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1589979481223-deb893043163?q=80&w=1987&auto=format&fit=crop')] bg-cover bg-center opacity-20" />
+                <div className="w-full md:w-2/3 h-[500px] bg-gradient-to-br from-blue-900/30 to-blue-950/50 rounded-2xl relative overflow-hidden border border-brand-orange/30 shadow-2xl">
+                    {/* Maldives Map Background */}
+                    <div className="absolute inset-0">
+                        <svg className="w-full h-full" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+                            {/* Ocean background */}
+                            <rect width="400" height="600" fill="#1e3a5f" />
+
+                            {/* Maldives archipelago outline - simplified representation */}
+                            <g opacity="0.3" fill="#4a90e2" stroke="#6bb6ff" strokeWidth="0.5">
+                                {/* Northern atolls */}
+                                <ellipse cx="200" cy="100" rx="15" ry="20" />
+                                <ellipse cx="180" cy="130" rx="18" ry="22" />
+                                <ellipse cx="210" cy="140" rx="16" ry="19" />
+
+                                {/* Central atolls */}
+                                <ellipse cx="190" cy="180" rx="20" ry="25" />
+                                <ellipse cx="220" cy="190" rx="17" ry="21" />
+                                <ellipse cx="175" cy="220" rx="19" ry="23" />
+                                <ellipse cx="205" cy="235" rx="21" ry="26" />
+
+                                {/* Male atolls */}
+                                <ellipse cx="200" cy="280" rx="22" ry="27" />
+                                <ellipse cx="195" cy="320" rx="20" ry="24" />
+
+                                {/* Southern atolls */}
+                                <ellipse cx="210" cy="370" rx="18" ry="22" />
+                                <ellipse cx="200" cy="410" rx="19" ry="23" />
+                                <ellipse cx="205" cy="450" rx="17" ry="21" />
+                                <ellipse cx="208" cy="490" rx="16" ry="20" />
+                            </g>
+                        </svg>
+                    </div>
 
                     {/* Atoll markers */}
                     {atolls.map((atoll, index) => (
@@ -80,8 +109,8 @@ const Destinations = () => {
                     ))}
 
                     {/* Decorative elements */}
-                    <div className="absolute top-4 right-4 text-brand-orange/30 font-serif text-sm">
-                        Interactive Map
+                    <div className="absolute top-4 right-4 text-brand-orange/40 font-serif text-sm">
+                        Maldives Atolls
                     </div>
                 </div>
             </div>

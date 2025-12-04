@@ -80,7 +80,7 @@ const ResortCollection = () => {
                                             <span key={i} className="text-brand-orange text-sm">★</span>
                                         ))}
                                     </div>
-                                    <h3 className="text-2xl font-serif font-bold mb-1">{resort.name}</h3>
+                                    <h3 className="text-2xl font-serif font-bold mb-1 text-brand-orange">{resort.name}</h3>
                                     <p className="text-sm text-gray-300 mb-2">{resort.atoll}</p>
                                     <p className="text-sm text-gray-200">{resort.description}</p>
                                 </div>
