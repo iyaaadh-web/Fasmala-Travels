@@ -23,7 +23,9 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/98 backdrop-blur-lg shadow-lg py-3' : 'bg-white/95 backdrop-blur-md shadow-md py-5'
+            className={`fixed w-full z-50 transition-all duration-300 ${isScrolled
+                    ? 'bg-white shadow-lg py-3'
+                    : 'bg-transparent py-5'
                 }`}
         >
             <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center">
