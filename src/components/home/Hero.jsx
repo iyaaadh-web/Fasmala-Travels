@@ -4,20 +4,14 @@ import { motion } from 'framer-motion';
 const Hero = () => {
     return (
         <div className="relative h-screen w-full overflow-hidden">
-            {/* Video Background */}
+            {/* Image Background */}
             <div className="absolute inset-0">
-                <div className="absolute inset-0 bg-black/30 z-10" /> {/* Overlay */}
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
+                <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50 z-10" /> {/* Elegant gradient overlay */}
+                <img
+                    src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?q=80&w=2065&auto=format&fit=crop"
+                    alt="Maldives Paradise"
                     className="w-full h-full object-cover"
-                    poster="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?q=80&w=1974&auto=format&fit=crop"
-                >
-                    {/* Placeholder video URL - ideally replace with local asset or high-quality CDN link */}
-                    <source src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-islands-in-the-ocean-1229-large.mp4" type="video/mp4" />
-                </video>
+                />
             </div>
 
             {/* Content */}
