@@ -16,10 +16,9 @@ const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { name: 'Our Collection', path: '/our-collection' },
-        { name: 'Destinations', path: '/destinations' },
-        { name: 'Experiences', path: '/experiences' },
-        { name: 'About Us', path: '/about' },
+        { name: 'Home', path: '/' },
+        { name: 'About', path: '/about' },
+        { name: 'Our Collection', path: '/collection' },
     ];
 
     return (
@@ -50,8 +49,8 @@ const Navbar = () => {
                     <Link
                         to="/contact"
                         className={`px-6 py-2 border transition-all duration-300 ${isScrolled
-                                ? 'border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white'
-                                : 'border-white text-white hover:bg-white hover:text-brand-orange'
+                            ? 'border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white'
+                            : 'border-white text-white hover:bg-white hover:text-brand-orange'
                             }`}
                     >
                         Plan Your Trip

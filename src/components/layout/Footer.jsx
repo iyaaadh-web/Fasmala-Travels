@@ -24,10 +24,10 @@ const Footer = () => {
                     <div>
                         <h4 className="text-lg font-serif font-semibold mb-6 text-white">Explore</h4>
                         <ul className="space-y-3">
-                            <li><Link to="/our-collection" className="text-gray-400 hover:text-brand-orange transition-colors">Our Collection</Link></li>
-                            <li><Link to="/destinations" className="text-gray-400 hover:text-brand-orange transition-colors">Destinations</Link></li>
-                            <li><Link to="/experiences" className="text-gray-400 hover:text-brand-orange transition-colors">Experiences</Link></li>
-                            <li><Link to="/sustainable" className="text-gray-400 hover:text-brand-orange transition-colors">Sustainability</Link></li>
+                            <li><Link to="/" className="text-gray-400 hover:text-brand-orange transition-colors">Home</Link></li>
+                            <li><Link to="/about" className="text-gray-400 hover:text-brand-orange transition-colors">About</Link></li>
+                            <li><Link to="/collection" className="text-gray-400 hover:text-brand-orange transition-colors">Our Collection</Link></li>
+                            <li><Link to="/contact" className="text-gray-400 hover:text-brand-orange transition-colors">Contact</Link></li>
                         </ul>
                     </div>
 
