@@ -7,16 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        navy: {
-          DEFAULT: '#001F3F',
-          dark: '#001830',
-          light: '#002a52',
-        },
-        gold: {
-          DEFAULT: '#D4AF37',
-          light: '#E5C158',
-          dark: '#B39225',
-        },
+        'brand-orange': '#F5A623',
+        'brand-dark': '#1A1A1A',
+        'brand-light': '#FFF5E6',
         offwhite: '#F8F9FA',
       },
       fontFamily: {

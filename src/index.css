@@ -8,20 +8,27 @@
   html {
     scroll-behavior: smooth;
   }
+
   body {
     @apply bg-offwhite text-gray-800 font-sans antialiased;
   }
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-serif text-navy;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif text-brand-dark;
   }
 }
 
 .luxury-gradient {
-  background: linear-gradient(135deg, #001F3F 0%, #003366 100%);
+  background: linear-gradient(135deg, #F5A623 0%, #FF8C00 100%);
 }
 
 .text-gold-gradient {
-  background: linear-gradient(to right, #D4AF37, #F2D06B, #D4AF37);
+  background: linear-gradient(to right, #F5A623, #FFB84D, #F5A623);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 200% auto;
