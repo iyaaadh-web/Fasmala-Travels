@@ -23,15 +23,17 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'
+            className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-3' : 'bg-white/90 backdrop-blur-sm shadow-md py-4'
                 }`}
         >
             <div className="container mx-auto px-6 flex justify-between items-center">
-                <Link to="/" className="flex items-center gap-2">
-                    {/* Logo Text - Using Brand Orange */}
-                    <span className={`text-2xl font-serif font-bold tracking-widest ${isScrolled ? 'text-brand-orange' : 'text-white'}`}>
-                        FASMALA
-                    </span>
+                <Link to="/" className="flex items-center gap-3">
+                    {/* Logo Image */}
+                    <img
+                        src="/logo.png"
+                        alt="Fasmala Travels Logo"
+                        className="h-12 w-auto"
+                    />
                 </Link>
 
                 {/* Desktop Menu */}
@@ -40,18 +42,14 @@ const Navbar = () => {
                         <Link
                             key={link.name}
                             to={link.path}
-                            className={`text-sm uppercase tracking-wider hover:text-brand-orange transition-colors ${isScrolled ? 'text-brand-dark' : 'text-white/90'
-                                }`}
+                            className="text-sm uppercase tracking-wider text-brand-dark hover:text-brand-orange transition-colors"
                         >
                             {link.name}
                         </Link>
                     ))}
                     <Link
                         to="/contact"
-                        className={`px-6 py-2 border transition-all duration-300 ${isScrolled
-                            ? 'border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white'
-                            : 'border-white text-white hover:bg-white hover:text-brand-orange'
-                            }`}
+                        className="px-6 py-2 border border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white transition-all duration-300"
                     >
                         Plan Your Trip
                     </Link>
@@ -63,9 +61,9 @@ const Navbar = () => {
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 >
                     {isMobileMenuOpen ? (
-                        <X className={isScrolled ? 'text-brand-dark' : 'text-white'} />
+                        <X className="text-brand-dark" />
                     ) : (
-                        <Menu className={isScrolled ? 'text-brand-dark' : 'text-white'} />
+                        <Menu className="text-brand-dark" />
                     )}
                 </button>
             </div>
