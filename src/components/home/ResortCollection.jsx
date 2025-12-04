@@ -7,84 +7,84 @@ const ResortCollection = () => {
             name: "Soneva Jani",
             atoll: "Noonu Atoll",
             description: "Overwater villas with slides into the lagoon",
-            image: "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c78?q=80&w=2069&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?q=80&w=1974&auto=format&fit=crop", // Slide/Water villa vibe
             stars: 5
         },
         {
             name: "Gili Lankanfushi",
             atoll: "North Male Atoll",
             description: "Eco-luxury overwater bungalows",
-            image: "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=2088&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1439066615861-d1fbced6530e?q=80&w=2070&auto=format&fit=crop", // Rustic luxury
             stars: 5
         },
         {
             name: "Baros Maldives",
             atoll: "North Male Atoll",
             description: "Intimate island with pristine beaches",
-            image: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?q=80&w=2065&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?q=80&w=2065&auto=format&fit=crop", // Classic Maldives
             stars: 5
         },
         {
             name: "Anantara Kihavah",
             atoll: "Baa Atoll",
             description: "UNESCO Biosphere Reserve luxury",
-            image: "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?q=80&w=1974&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c78?q=80&w=2069&auto=format&fit=crop", // Underwater/Blue
             stars: 5
         },
         {
             name: "Conrad Maldives",
             atoll: "South Ari Atoll",
             description: "Twin-island paradise resort",
-            image: "https://images.unsplash.com/photo-1586861635167-e5223aadc9fe?q=80&w=1974&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=2088&auto=format&fit=crop", // Aerial view
             stars: 5
         },
         {
             name: "Velaa Private Island",
             atoll: "Noonu Atoll",
             description: "Ultra-luxury private island experience",
-            image: "https://images.unsplash.com/photo-1439066615861-d1fbced6530e?q=80&w=2070&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1618245318763-a15156d6b23c?q=80&w=2070&auto=format&fit=crop", // Modern luxury
             stars: 5
         },
         {
             name: "Four Seasons Landaa Giraavaru",
             atoll: "Baa Atoll",
             description: "Wellness and marine discovery",
-            image: "https://images.unsplash.com/photo-1605538108596-795d788d9eb5?q=80&w=2070&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop", // Blue/White
             stars: 5
         },
         {
             name: "One&Only Reethi Rah",
             atoll: "North Male Atoll",
             description: "Exclusive island sanctuary",
-            image: "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=2070&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=2070&auto=format&fit=crop", // Beach/Pool
             stars: 5
         },
         {
             name: "Cheval Blanc Randheli",
             atoll: "Noonu Atoll",
             description: "French elegance meets Maldivian beauty",
-            image: "https://images.unsplash.com/photo-1560252019-357f8854650d?q=80&w=2070&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1560252019-357f8854650d?q=80&w=2070&auto=format&fit=crop", // Elegant design
             stars: 5
         },
         {
             name: "Waldorf Astoria Maldives",
             atoll: "South Male Atoll",
             description: "Contemporary luxury and sophistication",
-            image: "https://images.unsplash.com/photo-1512100356356-de1b84283e18?q=80&w=1975&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1512100356356-de1b84283e18?q=80&w=1975&auto=format&fit=crop", // Modern
             stars: 5
         },
         {
             name: "The St. Regis Maldives",
             atoll: "Vommuli Island",
             description: "Exquisite beachfront villas",
-            image: "https://images.unsplash.com/photo-1537639622086-73570d4564ed?q=80&w=2070&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=2070&auto=format&fit=crop", // Architecture
             stars: 5
         },
         {
             name: "Six Senses Laamu",
             atoll: "Laamu Atoll",
             description: "Sustainable luxury in untouched nature",
-            image: "https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?q=80&w=2021&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?q=80&w=2021&auto=format&fit=crop", // Wooden/Nature
             stars: 5
         }
     ];
