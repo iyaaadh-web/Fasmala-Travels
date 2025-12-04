@@ -24,8 +24,8 @@ const Navbar = () => {
     return (
         <nav
             className={`fixed w-full z-50 transition-all duration-300 ${isScrolled
-                    ? 'bg-white shadow-lg py-3'
-                    : 'bg-transparent py-5'
+                ? 'bg-white shadow-lg py-3'
+                : 'bg-brand-dark/80 backdrop-blur-sm py-5'
                 }`}
         >
             <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center">
@@ -34,7 +34,7 @@ const Navbar = () => {
                     <img
                         src="/logo.png"
                         alt="Fasmala Travels Logo"
-                        className="h-14 w-auto transition-transform duration-300 group-hover:scale-105 drop-shadow-md"
+                        className="h-14 w-auto transition-transform duration-300 group-hover:scale-105 drop-shadow-lg"
                     />
                 </Link>
 
@@ -44,14 +44,18 @@ const Navbar = () => {
                         <Link
                             key={link.name}
                             to={link.path}
-                            className="text-sm font-medium uppercase tracking-widest text-brand-dark hover:text-brand-orange transition-colors duration-300"
+                            className={`text-sm font-medium uppercase tracking-widest transition-colors duration-300 ${isScrolled ? 'text-brand-dark hover:text-brand-orange' : 'text-white hover:text-brand-orange'
+                                }`}
                         >
                             {link.name}
                         </Link>
                     ))}
                     <Link
                         to="/contact"
-                        className="px-8 py-3 border-2 border-brand-orange text-brand-orange font-semibold uppercase tracking-wider hover:bg-brand-orange hover:text-white transition-all duration-300 rounded-sm"
+                        className={`px-8 py-3 border-2 font-semibold uppercase tracking-wider transition-all duration-300 rounded-sm ${isScrolled
+                            ? 'border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white'
+                            : 'border-white text-white hover:bg-white hover:text-brand-dark'
+                            }`}
                     >
                         Contact Us
                     </Link>
@@ -63,9 +67,9 @@ const Navbar = () => {
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 >
                     {isMobileMenuOpen ? (
-                        <X className="text-brand-dark" />
+                        <X className={isScrolled ? 'text-brand-dark' : 'text-white'} />
                     ) : (
-                        <Menu className="text-brand-dark" />
+                        <Menu className={isScrolled ? 'text-brand-dark' : 'text-white'} />
                     )}
                 </button>
             </div>

@@ -4,14 +4,19 @@ import { motion } from 'framer-motion';
 const Hero = () => {
     return (
         <div className="relative h-screen w-full overflow-hidden">
-            {/* Image Background - Lighter image for better navbar visibility */}
+            {/* Video Background */}
             <div className="absolute inset-0">
-                <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30 z-10" /> {/* Lighter overlay */}
-                <img
-                    src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=2070&auto=format&fit=crop"
-                    alt="Maldives Paradise"
+                <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40 z-10" /> {/* Overlay for text visibility */}
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
                     className="w-full h-full object-cover"
-                />
+                    poster="https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=2070&auto=format&fit=crop"
+                >
+                    <source src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-beautiful-turquoise-water-in-the-maldives-2626-large.mp4" type="video/mp4" />
+                </video>
             </div>
 
             {/* Content */}
@@ -36,16 +41,6 @@ const Hero = () => {
                     Curated journeys to the world's most breathtaking islands
                 </motion.p>
             </div>
-
-            {/* Scroll Indicator */}
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 2, duration: 1 }}
-                className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 animate-bounce"
-            >
-                <div className="w-px h-16 bg-white/50 mx-auto"></div>
-            </motion.div>
         </div>
     );
 };
