@@ -44,9 +44,10 @@ const Navbar = () => {
           {/* Logo – with elegant Playfair font fallback */}
           <Link to="/" className="flex items-center gap-4">
             <img
-              src="//logo.png"
-              alt="Fasmala Travels"
-              className="h-12 md:h-14 w-auto"
+            src="/logo-white.png"
+            alt="Fasmala Travels"
+            onError={() => setLogoError(true)}   // ← if image fails → switch to text
+            className="h-12 md:h-14 w-auto object-contain"
             />
             {/* Optional text logo if you want */}
             {/* <span className="text-2xl md:text-3xl font-bold text-[#F5E6D3]" style={{ fontFamily: "'Playfair Display', serif" }}>
