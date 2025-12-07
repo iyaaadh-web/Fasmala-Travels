@@ -37,7 +37,7 @@ const Navbar = () => {
                         ? 'bg-[#2C1810]/95 backdrop-blur-md shadow-xl py-4' 
                         : 'bg-transparent py-8'
                 }`}
-                style={{ fontFamily: 'Montserrat, sans-serif' }}
+                style={{ fontFamily: 'font-serif italic' }}
             >
                 <div className="container mx-auto px-6 flex justify-between items-center">
                     {/* Logo - Exactly like your banner */}
