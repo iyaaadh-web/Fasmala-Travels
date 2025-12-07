@@ -1,42 +1,43 @@
 import React from 'react';
 
 const Hero = () => {
-    return (
-        <div className="relative h-screen w-full overflow-hidden">
-            {/* Video Background */}
-            <div className="absolute inset-0">
-                <div className="absolute inset-0 bg-black/40 z-10" />
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-full object-cover"
-                    poster="https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=2070&auto=format&fit=crop"
-                >
-                    <source src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-beautiful-turquoise-water-in-the-maldives-2626-large.mp4" type="video/mp4" />
-                </video>
-            </div>
+  return (
+    <section className="relative h-screen w-full overflow-hidden">
+      {/* Video Background Container */}
+      <div className="absolute inset-0">
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/50 z-10" />
 
-            {/* Content */}
-            <div className="relative z-20 h-full flex flex-col justify-center items-center text-center text-white px-4">
-                <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 max-w-4xl text-white">
-                    Discover the Untouched Maldives
-                </h1>
+        {/* Background Video - using your local file */}
+        <video
+          className="h-full w-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          poster="/hero-poster.jpg" // optional: add a fallback image in public/
+        >
+          <source src="/hero-video.mp4" type="video/mp4" />
+          
+          {/* Optional: add a WebM version for better browser support & performance */}
+          {/* <source src="/hero-video.webm" type="video/webm" /> */}
+          
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
 
-                <p className="text-xl md:text-2xl max-w-2xl mb-10 font-light">
-                    Curated journeys to the world's most breathtaking islands
-                </p>
-
-                <a
-                    href="/collection"
-                    className="px-10 py-4 bg-brand-orange text-white font-semibold hover:bg-white hover:text-brand-orange transition-all duration-300"
-                >
-                    Explore Our Collection
-                </a>
-            </div>
-        </div>
-    );
+      {/* Hero Text Content */}
+      <div className="relative z-20 flex h-full flex-col items-center justify-center px-6 text-center text-white">
+        <h1 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl md:text-6xl lg:text-7xl max-w-5xl">
+          Discover the Untouched Maldives
+        </h1>
+        <p className="mt-6 max-w-2xl text-lg font-light opacity-90 sm:text-xl md:mt-8 md:text-2xl">
+          Curated journeys to the world's most breathtaking islands
+        </p>
+      </div>
+    </section>
+  );
 };
 
 export default Hero;
