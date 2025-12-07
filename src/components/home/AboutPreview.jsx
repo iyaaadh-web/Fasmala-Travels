@@ -9,7 +9,7 @@ const AboutPreview = () => {
             <div className="container mx-auto px-6 relative z-10">
                 <div className="md:w-1/2">
                     <span className="text-brand-white font-serif italic text-xl mb-4 block">Our Story</span>
-                    <h2 className="text-4xl font-serif font-bold mb-8">Curating Paradise Since 2010</h2>
+                    <h2 className="text-4xl font-serif font-bold mb-8 text-white">Curating Paradise Since 2024</h2>
                     <p className="text-gray-300 font-serif leading-relaxed mb-6">
                         Fasmala Travels was born from a deep love for the Maldives and a desire to share its hidden gems with the world. We are a team of local experts and luxury travel enthusiasts dedicated to crafting bespoke journeys that go beyond the ordinary.
                     </p>
