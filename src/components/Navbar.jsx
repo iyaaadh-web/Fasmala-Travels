@@ -44,7 +44,7 @@ const Navbar = () => {
                     <a href="#" className="relative">
                         <h1 
                             className="text-4xl md:text-5xl tracking-widest text-white"
-                            style={{ fontFamily: 'Playfair Display, serif', fontWeight: 700 }}
+                            style={{ fontFamily: 'Playfair Display, Montserrat ExtraLight/300', fontWeight: 900 }}
                         >
                             Fasmala<span className="text-[#E86A33] ml-1">Travels</span>
                         </h1>
