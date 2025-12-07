@@ -28,11 +28,11 @@ const Hero = () => {
       </div>
 
       {/* Hero Text Content */}
-      <div className="relative z-20 flex h-full flex-col items-center justify-center px-6 text-center text-white">
-        <h1 className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl md:text-6xl lg:text-7xl max-w-5xl">
+      <div className="relative z-20 flex h-full flex-col items-center justify-center px-6 text-center">
+        <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight max-w-5xl">
           Discover the Untouched Maldives
         </h1>
-        <p className="mt-6 max-w-2xl text-lg font-light opacity-90 sm:text-xl md:mt-8 md:text-2xl">
+        <p className="text-white mt-6 max-w-2xl text-lg sm:text-xl md:text-2xl font-light opacity-90">
           Curated journeys to the world's most breathtaking islands
         </p>
       </div>
