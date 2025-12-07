@@ -1,0 +1,29 @@
+import React from 'react';
+import { ArrowRight } from 'lucide-react';
+
+const AboutPreview = () => {
+    return (
+        <section className="py-20 bg-brand-dark text-white relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-1/2 h-full bg-[url('https://images.unsplash.com/photo-1514282401047-d79a71a590e8?q=80&w=2065&auto=format&fit=crop')] bg-cover bg-center opacity-20 hidden md:block" />
+
+            <div className="container mx-auto px-6 relative z-10">
+                <div className="md:w-1/2">
+                    <span className="text-brand-orange font-serif italic text-xl mb-4 block">Our Story</span>
+                    <h2 className="text-4xl font-serif font-bold mb-8">Curating Paradise Since 2010</h2>
+                    <p className="text-gray-300 leading-relaxed mb-6">
+                        Fasmala Travels was born from a deep love for the Maldives and a desire to share its hidden gems with the world. We are a team of local experts and luxury travel enthusiasts dedicated to crafting bespoke journeys that go beyond the ordinary.
+                    </p>
+                    <p className="text-gray-300 leading-relaxed mb-10">
+                        Whether you seek the thrill of diving with manta rays, the serenity of a private sandbank, or the indulgence of a world-class spa, we know the perfect island for you.
+                    </p>
+
+                    <button className="flex items-center text-brand-orange font-medium hover:text-white transition-colors group">
+                        Read Our Full Story <ArrowRight size={20} className="ml-2 transform group-hover:translate-x-1 transition-transform" />
+                    </button>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default AboutPreview;
