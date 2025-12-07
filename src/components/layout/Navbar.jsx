@@ -47,7 +47,7 @@ const Navbar = () => {
             <img
               src="/logo.png"
               alt="Fasmala Travels"
-              className="h-15 md:h-20 w-auto"
+              className="h-12 md:h-15 w-auto"
             />
           </Link>
 
