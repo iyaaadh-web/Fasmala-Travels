@@ -44,7 +44,7 @@ const Navbar = () => {
           {/* Logo – with elegant Playfair font fallback */}
           <Link to="/" className="flex items-center gap-4">
             <img
-              src="img src="/logo.png"
+              src="/logo.png"
               alt="Fasmala Travels"
               className="h-12 md:h-14 w-auto"
             />
